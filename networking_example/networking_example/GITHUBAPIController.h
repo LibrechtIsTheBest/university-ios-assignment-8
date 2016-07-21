@@ -8,4 +8,8 @@
     success:(void(^)(NSURL *))success
     failure:(void(^)(NSError *))failure;
 
+- (void)getReposInfoForUser:(NSString *)userName
+                success:(void (^)(NSArray *reposInfo))success
+                failure:(void (^)(NSInteger responseStatusCode, NSError *error))failure;
+
 @end

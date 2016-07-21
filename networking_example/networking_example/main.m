@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Repository.h"
 
 #import "AppDelegate.h"
 
