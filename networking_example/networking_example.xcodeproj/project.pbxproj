@@ -25,6 +25,7 @@
 		AEB73B6818E99BEB0021BCCD /* GITHUBAPIController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB73B6718E99BEB0021BCCD /* GITHUBAPIController.m */; };
 		F58FB5C41D409A1B005847F4 /* ReposViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58FB5C31D409A1B005847F4 /* ReposViewController.m */; };
 		F58FB5DF1D40E7F5005847F4 /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = F58FB5DE1D40E7F5005847F4 /* Repository.m */; };
+		F58FB5E81D411C1E005847F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58FB5E71D411C1E005847F4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		F58FB5C31D409A1B005847F4 /* ReposViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReposViewController.m; sourceTree = "<group>"; };
 		F58FB5DD1D40E7F5005847F4 /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
 		F58FB5DE1D40E7F5005847F4 /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
+		F58FB5E71D411C1E005847F4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				F58FB5C31D409A1B005847F4 /* ReposViewController.m */,
 				F58FB5DD1D40E7F5005847F4 /* Repository.h */,
 				F58FB5DE1D40E7F5005847F4 /* Repository.m */,
+				F58FB5E71D411C1E005847F4 /* LaunchScreen.storyboard */,
 			);
 			path = networking_example;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEB73B4A18E9979F0021BCCD /* Images.xcassets in Resources */,
+				F58FB5E81D411C1E005847F4 /* LaunchScreen.storyboard in Resources */,
 				AEB73B3C18E9979F0021BCCD /* InfoPlist.strings in Resources */,
 				AEB73B4518E9979F0021BCCD /* Main.storyboard in Resources */,
 			);

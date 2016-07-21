@@ -72,6 +72,8 @@
 - (void)setGrayMode:(BOOL)grayMode
 {
     _grayMode = grayMode;
+    self.grayView.frame = self.view.bounds;self.activityIndicator.center = self.grayView.center;
+    self.activityIndicator.center = self.grayView.center;
     if (_grayMode) {
         
         [self.view addSubview:self.grayView];
