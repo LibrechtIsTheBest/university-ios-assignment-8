@@ -136,6 +136,8 @@ static NSString *const kBaseAPIURL = @"https://api.github.com";
         
         NSMutableArray *mutableReposInfo = [[NSMutableArray alloc] init];
         
+        BOOL __block errorInInternalRequest = NO;
+        
         if (success) {
             
             dispatch_group_t group = dispatch_group_create();
@@ -155,16 +157,21 @@ static NSString *const kBaseAPIURL = @"https://api.github.com";
                 } failure:^(NSInteger responseStatusCode, NSError *error) {
                     
                     [mutableReposInfo addObject:[[Repository alloc] initWithName:repoName]];
-//                    if (failure) {
-//                        failure(responseStatusCode, error);
-//                    }
+                    
+                    errorInInternalRequest = YES;
+                    
+                    if (failure) {
+                        failure(responseStatusCode, error);
+                    }
                     dispatch_group_leave(group);
                 }];
             }
             
             dispatch_group_notify(group, dispatch_get_main_queue(), ^{
                 
-                success([NSArray arrayWithArray:mutableReposInfo]);
+                if (!errorInInternalRequest) {
+                    success([NSArray arrayWithArray:mutableReposInfo]);
+                }
             });
         }
         

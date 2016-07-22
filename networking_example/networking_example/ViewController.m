@@ -2,6 +2,7 @@
 #import "GITHUBAPIController.h"
 #import <UIImageView+AFNetworking.h>
 #import "ReposViewController.h"
+#import "UIAlertController+HTTPError.h"
 
 
 @interface ViewController () <UITextFieldDelegate>
@@ -63,8 +64,8 @@
         
         wself.grayMode = NO;
         
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:error.localizedDescription message:error.localizedRecoverySuggestion preferredStyle:UIAlertControllerStyleAlert];
-        [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:NULL]];
+        UIAlertController *alertController = [UIAlertController dummyAlertControllerWithHTTPErrorCode:responseStatusCode];
+        
         [wself presentViewController:alertController animated:YES completion:NULL];
     }];
 }

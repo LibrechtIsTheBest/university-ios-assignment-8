@@ -23,6 +23,7 @@
 		AEB73B5B18E9979F0021BCCD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEB73B5918E9979F0021BCCD /* InfoPlist.strings */; };
 		AEB73B5D18E9979F0021BCCD /* networking_exampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB73B5C18E9979F0021BCCD /* networking_exampleTests.m */; };
 		AEB73B6818E99BEB0021BCCD /* GITHUBAPIController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB73B6718E99BEB0021BCCD /* GITHUBAPIController.m */; };
+		F536D3341D425E9A00FA8336 /* UIAlertController+HTTPError.m in Sources */ = {isa = PBXBuildFile; fileRef = F536D3331D425E9A00FA8336 /* UIAlertController+HTTPError.m */; };
 		F58FB5C41D409A1B005847F4 /* ReposViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58FB5C31D409A1B005847F4 /* ReposViewController.m */; };
 		F58FB5DF1D40E7F5005847F4 /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = F58FB5DE1D40E7F5005847F4 /* Repository.m */; };
 		F58FB5E81D411C1E005847F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58FB5E71D411C1E005847F4 /* LaunchScreen.storyboard */; };
@@ -63,6 +64,8 @@
 		AEB73B6618E99BEB0021BCCD /* GITHUBAPIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GITHUBAPIController.h; sourceTree = "<group>"; };
 		AEB73B6718E99BEB0021BCCD /* GITHUBAPIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GITHUBAPIController.m; sourceTree = "<group>"; };
 		E79446CDBF636735AED58B0A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F536D3321D425E9A00FA8336 /* UIAlertController+HTTPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+HTTPError.h"; sourceTree = "<group>"; };
+		F536D3331D425E9A00FA8336 /* UIAlertController+HTTPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+HTTPError.m"; sourceTree = "<group>"; };
 		F58FB5C21D409A1B005847F4 /* ReposViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReposViewController.h; sourceTree = "<group>"; };
 		F58FB5C31D409A1B005847F4 /* ReposViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReposViewController.m; sourceTree = "<group>"; };
 		F58FB5DD1D40E7F5005847F4 /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 				F58FB5DD1D40E7F5005847F4 /* Repository.h */,
 				F58FB5DE1D40E7F5005847F4 /* Repository.m */,
 				F58FB5E71D411C1E005847F4 /* LaunchScreen.storyboard */,
+				F536D3321D425E9A00FA8336 /* UIAlertController+HTTPError.h */,
+				F536D3331D425E9A00FA8336 /* UIAlertController+HTTPError.m */,
 			);
 			path = networking_example;
 			sourceTree = "<group>";
@@ -341,6 +346,7 @@
 				AEB73B6818E99BEB0021BCCD /* GITHUBAPIController.m in Sources */,
 				AEB73B4218E9979F0021BCCD /* AppDelegate.m in Sources */,
 				AEB73B3E18E9979F0021BCCD /* main.m in Sources */,
+				F536D3341D425E9A00FA8336 /* UIAlertController+HTTPError.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
