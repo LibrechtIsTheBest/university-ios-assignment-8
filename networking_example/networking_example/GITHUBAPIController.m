@@ -148,20 +148,24 @@ static NSString *const kBaseAPIURL = @"https://api.github.com";
                 
                 [self getCommitsInfoForUser:userName repo:repoName success:^(NSArray *commits) {
                     
-                    NSString *author = commits[0][@"commit"][@"author"][@"name"];
-                    NSString *date = commits[0][@"commit"][@"author"][@"date"];
-                    
-                    [mutableReposInfo addObject:[[Repository alloc] initWithName:repoName authorName:author dateString:date]];
+                    if (errorInInternalRequest == NO) {
+                        
+                        NSString *author = commits[0][@"commit"][@"author"][@"name"];
+                        NSString *date = commits[0][@"commit"][@"author"][@"date"];
+                        
+                        [mutableReposInfo addObject:[[Repository alloc] initWithName:repoName authorName:author dateString:date]];
+                    }
                     dispatch_group_leave(group);
                     
                 } failure:^(NSInteger responseStatusCode, NSError *error) {
                     
-                    [mutableReposInfo addObject:[[Repository alloc] initWithName:repoName]];
-                    
-                    errorInInternalRequest = YES;
-                    
-                    if (failure) {
-                        failure(responseStatusCode, error);
+                    if (errorInInternalRequest == NO) {
+                        
+                        errorInInternalRequest = YES;
+                        
+                        if (failure) {
+                            failure(responseStatusCode, error);
+                        }
                     }
                     dispatch_group_leave(group);
                 }];
